@@ -1,0 +1,255 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  font-family: Arial, Helvetica, sans-serif;
+	color: gray;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px #00000040;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.trash {
+  width: 400px;
+  /* border: 1px solid red; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+}
+
+.trash div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid green;
+  width: 100%;
+}
+
+.trash button {
+  border: 1px solid orangered;
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  /* border: none; */
+}
+
+.trash h3 {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.bordered-row {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.tab {
+  height: 50px;
+  width: 100%;
+}
+
+.tab tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.tab tr th {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+	color: black;
+}
+
+.lastAction {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.lastAction span {
+  width: 100%;
+}
+
+.addButton button {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #ffaa0c;
+  border: none;
+  width: 300px;
+  height: 40px;
+  box-shadow: -1px 7px 5px #00000010;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+	flex-direction: column;
+	border-radius: 20px;
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+	height: 30%;
+}
+
+.modal-content h1 {
+	padding-left: 20px;
+  width: 100%;
+}
+
+.modal-content button {
+	background-color: #ffaa0c;
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	border: none;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.addButton {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  background-color: white;
+  box-shadow: 0px 0px 10px #00000040;
+  border-radius: 10px;
+}
+
+.agree {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5be881;
+  padding: 3px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.reject {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  background-color: #ff0000;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.process {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  background-color: #fdb64d;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.fields {
+		width: 100%;
+		height: 100%;
+		display: flex;
+}
+
+#firstDiv {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+		width:100%;
+    height: 100%;
+}
+
+.fields div input {
+	background-color: transparent;
+	border-radius: 10px;
+	border: 1px solid gray;
+	height: 45px;
+	width: 80%;
+}
+
+.fields div label {
+  width: 80%;
+}
+
+.saveButton {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+}
+
+.inputLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+	width:100%;
+  height: 100%;
+}

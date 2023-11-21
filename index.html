@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="container" id="objectList">
+      <table class="tab">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Date de creation</th>
+            <th>Etat</th>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Nom d'utilisateur</th>
+            <th>Matricule</th>
+            <th class="lastAction"><span>Action</span></th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+      <!-- <div class="trash">
+        <h3>Action</h3>
+        <div>
+          <button id="trashId">
+            <i class="material-symbols-outlined"> delete </i>
+          </button>
+          <button id="trashId">
+            <i class="material-symbols-outlined"> delete </i>
+          </button>
+          <button id="trashId">
+            <i class="material-symbols-outlined"> delete </i>
+          </button>
+        </div>
+      </div> -->
+    </div>
+    <div id="myBtn" class="addButton">
+      <button>Ajouter utilisateur</button>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <h1>Ajout d'utilisateurs</h1>
+        <form class="fields">
+          <div id="firstDiv">
+            <div class="inputLabel">
+              <label for="text">Name</label>
+              <input type="text" />
+            </div>
+            <div class="inputLabel">
+              <label for="text">Nom d'utilisateur</label>
+              <input type="text" />
+            </div>
+            <div class="inputLabel">
+              <label for="text">Matricule</label>
+              <input type="text" />
+            </div>
+          </div>
+          <div id="firstDiv">
+            <div class="inputLabel">
+              <label for="text">Nom d'utilisateur</label>
+              <input type="text" />
+            </div>
+            <div class="inputLabel">
+              <label for="text">Matricule</label>
+              <input type="text" />
+            </div>
+            <div class="inputLabel">
+            </div>
+          </div>
+          <div id="firstDiv">
+            <div class="inputLabel">
+              <label for="text">Nom d'utilisateur</label>
+              <input type="text" />
+            </div>
+            <div class="inputLabel">
+            </div>
+            <div class="inputLabel">
+            </div>
+          </div>
+        </form>
+        <div class="saveButton">
+          <button>Enregistrer</button>
+        </div>
+      </div>
+    </div>
+    <script src="eprogram.js"></script>
+  </body>
+</html>
