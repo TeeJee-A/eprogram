@@ -7,7 +7,7 @@ let users = [
     lastName: "Taha",
     userName: "mtaha",
     registrationNumber: "2584",
-    action: ""
+    action: "",
   },
   {
     id: "987654321",
@@ -17,7 +17,7 @@ let users = [
     lastName: "Orrich",
     userName: "horrich",
     registrationNumber: "1594",
-    action: ""
+    action: "",
   },
   {
     id: "852963741",
@@ -27,7 +27,28 @@ let users = [
     lastName: "Mahidi",
     userName: "rmahidi",
     registrationNumber: "3576",
-    action: ""
+    action: "",
+  },
+];
+
+let modale = [
+  {
+    label: "Nom",
+  },
+  {
+    label: "Nom d'utilisateur",
+  },
+  {
+    label: "Matricule",
+  },
+  {
+    label: "prenom",
+  },
+  {
+    label: "Date de creation",
+  },
+  {
+    label: "Etat",
   },
 ];
 
@@ -52,38 +73,52 @@ console.log(birthday);
 displayList(users);
 
 function displayList(users) {
-    let tbody = document.getElementById('tableBody');
-    users.forEach(user => {
-        user.createdDate = new Date(user.createdDate);
-        user.createdDate.toString();
-        user.createdDate = user.createdDate.getDate() + "/" + (user.createdDate.getMonth() + 1) + "/" + user.createdDate.getFullYear();
-        let tr = document.createElement('tr');
-        tr.style.borderTop = "1px solid gray";
-        Object.entries(user).forEach(value => {
-            let td = document.createElement('td');
-            let div = document.createElement('div');
-            div.innerText = value[1];
-            td.classList.add('bordered-row');
-            if (value[1] === "En validation") {
-              div.classList.add('process');
-            } else if (value[1] === "Validé") {
-              div.classList.add('agree');
-            } else if (value[1] === "Rejeté") {
-              div.classList.add('reject');
-            }
-            td.appendChild(div);
-            tr.appendChild(td);
-        });
-        tbody.appendChild(tr);
+  let tbody = document.getElementById("tableBody");
+  users.forEach((user) => {
+    user.createdDate
+      ? (user.createdDate = new Date(user.createdDate))
+      : (user.createdDate = new Date());
+    user.createdDate.toString();
+    user.createdDate =
+      user.createdDate.getDate() +
+      "/" +
+      (user.createdDate.getMonth() + 1) +
+      "/" +
+      user.createdDate.getFullYear();
+    let tr = document.createElement("tr");
+    tr.style.borderTop = "1px solid gray";
+    Object.entries(user).forEach((value) => {
+      let td = document.createElement("td");
+      let div = document.createElement("div");
+      div.innerText = value[1];
+      td.classList.add("bordered-row");
+      if (value[1] === "En validation") {
+        div.classList.add("process");
+      } else if (value[1] === "Validé") {
+        div.classList.add("agree");
+      } else if (value[1] === "Rejeté") {
+        div.classList.add("reject");
+      }
+      td.appendChild(div);
+      tr.appendChild(td);
     });
+    tbody.appendChild(tr);
+  });
 }
 
-displayTrash(users);
+displayFields();
 
-function displayTrash(users) {
-  let button = document.getElementById('trashId');
-  for (let how = 0; how < users.length; how++){
-    let i = document.createElement('i');
-    button.appendChild(i);
-  }
+function displayFields() {
+  let form = document.getElementById("fields");
+  modale.forEach((field) => {
+    let div = document.createElement("div");
+    Object.entries(field).forEach((value) => {
+      let input = document.createElement("input");
+      let label = document.createElement("label");
+      label.innerText = value[1];
+      div.appendChild(label);
+      div.appendChild(input);
+    });
+    form.appendChild(div);
+  });
 }
