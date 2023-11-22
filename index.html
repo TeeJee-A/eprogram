@@ -19,10 +19,10 @@
         <thead>
           <tr>
             <th>ID</th>
-            <th>Date de creation</th>
-            <th>Etat</th>
+            <th>Date de création</th>
+            <th>État</th>
             <th>Nom</th>
-            <th>Prenom</th>
+            <th>Prénom</th>
             <th>Nom d'utilisateur</th>
             <th>Matricule</th>
             <th class="lastAction"><span>Action</span></th>
@@ -30,69 +30,42 @@
         </thead>
         <tbody id="tableBody"></tbody>
       </table>
-      <!-- <div class="trash">
-        <h3>Action</h3>
-        <div>
-          <button id="trashId">
-            <i class="material-symbols-outlined"> delete </i>
-          </button>
-          <button id="trashId">
-            <i class="material-symbols-outlined"> delete </i>
-          </button>
-          <button id="trashId">
-            <i class="material-symbols-outlined"> delete </i>
-          </button>
-        </div>
-      </div> -->
     </div>
-    <div id="myBtn" class="addButton">
-      <button>Ajouter utilisateur</button>
+    <div class="addButton">
+      <button id="myBtn" >Ajouter utilisateur</button>
     </div>
     <div id="myModal" class="modal">
       <div class="modal-content">
         <h1>Ajout d'utilisateurs</h1>
-        <!-- <form class="fields">
-          <div id="firstDiv">
-            <div class="inputLabel">
-              <label for="text">Name</label>
-              <input type="text" />
-            </div>
-            <div class="inputLabel">
-              <label for="text">Nom d'utilisateur</label>
-              <input type="text" />
-            </div>
-            <div class="inputLabel">
-              <label for="text">Matricule</label>
-              <input type="text" />
-            </div>
+        <form class="fields">
+          <div>
+            <label for="text">Nom</label>
+            <input required type="text" id="lastName"/>
           </div>
-          <div id="firstDiv">
-            <div class="inputLabel">
-              <label for="text">Prenom</label>
-              <input type="text" />
-            </div>
-            <div class="inputLabel">
-              <label for="text">Date de creation</label>
-              <input type="text" />
-            </div>
-            <div class="inputLabel">
-            </div>
+          <div>
+            <label for="text">Nom d'utilisateur</label>
+            <input required type="text" id="userName"/>
           </div>
-          <div id="firstDiv">
-            <div class="inputLabel">
-              <label for="text">Etat</label>
-              <input type="text" />
-            </div>
-            <div class="inputLabel">
-            </div>
-            <div class="inputLabel">
-            </div>
+          <div>
+            <label for="text">Matricule</label>
+            <input required type="text" id="registrationNumber"/>
           </div>
-        </form> -->
-        <form action="" class="fields" id="fields">
+          <div>
+            <label for="text">Prénom</label>
+            <input required type="text" id="firstName"/>
+          </div>
+          <div>
+            <label for="text">Date de création</label>
+            <input required type="text" id="createdDate"/>
+          </div>
+          <div>
+            <label for="text">État</label>
+            <input required type="text" id="status"/>
+          </div>
         </form>
+        <div id="error"></div>
         <div class="saveButton">
-          <button>Enregistrer</button>
+          <button id="enregistrer">Enregistrer</button>
         </div>
       </div>
     </div>

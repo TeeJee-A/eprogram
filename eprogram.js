@@ -66,31 +66,71 @@ window.onclick = function (event) {
   }
 };
 
-let birthday = new Date("1995-12-17T03:24:00");
-birthday.toString();
-console.log(birthday);
+var enrbtn = document.getElementById("enregistrer");
+
+enrbtn.onclick = function () {
+  var lastName = document.getElementById("lastName").value;
+  var firstName = document.getElementById("firstName").value;
+  var userName = document.getElementById("userName").value;
+  var createdDate = document.getElementById("createdDate").value;
+  var registrationNumber = document.getElementById("registrationNumber").value;
+  var status = document.getElementById("status").value;
+
+  if (
+    !userName.match(/^[a-zA-Z0-9](?:[a-zA-Z0-9_-]{1,14}[a-zA-Z0-9])?$/) ||
+    !registrationNumber.match(/^\d+$/) ||
+    !firstName.match(/^[a-zA-Z]+$/) ||
+    !lastName.match(/^[a-zA-Z]+$/)
+  ) {
+    let div = document.getElementById("error");
+    let span = document.createElement("span");
+    span.innerText = "incorrect or empty input";
+    div.appendChild(span);
+    span.classList.add("parsing");
+    return;
+  }
+  document.getElementById("lastName").value = "";
+  document.getElementById("firstName").value = "";
+  document.getElementById("userName").value = "";
+  document.getElementById("createdDate").value = "";
+  document.getElementById("registrationNumber").value = "";
+  document.getElementById("status").value = "";
+
+  users.push({
+    id: generateUUID(),
+    createdDate,
+    status,
+    firstName,
+    lastName,
+    userName,
+    registrationNumber,
+    action: "",
+  });
+  renderList(users);
+  modal.style.display = "none";
+};
 
 displayList(users);
 
 function displayList(users) {
   let tbody = document.getElementById("tableBody");
-  users.forEach((user) => {
-    user.createdDate
-      ? (user.createdDate = new Date(user.createdDate))
-      : (user.createdDate = new Date());
-    user.createdDate.toString();
-    user.createdDate =
-      user.createdDate.getDate() +
-      "/" +
-      (user.createdDate.getMonth() + 1) +
-      "/" +
-      user.createdDate.getFullYear();
+  users.forEach((user, index) => {
     let tr = document.createElement("tr");
     tr.style.borderTop = "1px solid gray";
     Object.entries(user).forEach((value) => {
+      if (value[0] === "createdDate") {
+        value[1] ? (value[1] = new Date(value[1])) : (value[1] = new Date());
+        console.log("data :0 ", value[1]);
+        value[1].toString();
+        value[1] =
+          value[1].getDate() +
+          "/" +
+          (value[1].getMonth() + 1) +
+          "/" +
+          value[1].getFullYear();
+      }
       let td = document.createElement("td");
       let div = document.createElement("div");
-      div.innerText = value[1];
       td.classList.add("bordered-row");
       if (value[1] === "En validation") {
         div.classList.add("process");
@@ -99,6 +139,21 @@ function displayList(users) {
       } else if (value[1] === "Rejeté") {
         div.classList.add("reject");
       }
+      if (value[0] === "action") {
+        let icon = document.createElement("img");
+        let button = document.createElement("button");
+        button.classList.add("buttonTrash");
+        div.classList.add("actionDiv");
+        icon.src = "trash.svg";
+        button.addEventListener("click", () => {
+          users.splice(index, 1);
+          renderList(users);
+        });
+        div.appendChild(button);
+        button.appendChild(icon);
+      } else {
+        div.innerText = value[1];
+      }
       td.appendChild(div);
       tr.appendChild(td);
     });
@@ -106,19 +161,16 @@ function displayList(users) {
   });
 }
 
-displayFields();
+function renderList(users) {
+  let tbody = document.getElementById("tableBody");
+  tbody.innerHTML = "";
+  displayList(users);
+}
 
-function displayFields() {
-  let form = document.getElementById("fields");
-  modale.forEach((field) => {
-    let div = document.createElement("div");
-    Object.entries(field).forEach((value) => {
-      let input = document.createElement("input");
-      let label = document.createElement("label");
-      label.innerText = value[1];
-      div.appendChild(label);
-      div.appendChild(input);
-    });
-    form.appendChild(div);
-  });
+function generateUUID() {
+  var uuid = "";
+  for (var i = 0; i < 8; i++) {
+    uuid += Math.floor(Math.random() * 10);
+  }
+  return uuid;
 }
