@@ -29,286 +29,6 @@ let users = [
     registrationNumber: "3576",
     action: "",
   },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
-  {
-    id: "852963741",
-    createdDate: "2021-09-15T00:00:00.000Z",
-    status: "Rejeté",
-    firstName: "Rachid",
-    lastName: "Mahidi",
-    userName: "rmahidi",
-    registrationNumber: "3576",
-    action: "",
-  },
 ];
 
 let modale = [
@@ -337,9 +57,8 @@ var close = document.getElementById("closemodal");
 var btn = document.getElementById("myBtn");
 
 close.onclick = function () {
-modal.style.display = "none";
-close.style.cursor = "pointer"
-}
+  modal.style.display = "none";
+};
 
 btn.onclick = function () {
   modal.style.display = "block";
@@ -365,15 +84,10 @@ enrbtn.onclick = function () {
     !userName.match(/^[a-zA-Z0-9](?:[a-zA-Z0-9_-]{1,14}[a-zA-Z0-9])?$/) ||
     !registrationNumber.match(/^\d+$/) ||
     !firstName.match(/^[a-zA-Z]+$/) ||
-    !lastName.match(/^[a-zA-Z]+$/)
-  ) {
-    let div = document.getElementById("error");
-    let span = document.createElement("span");
-    span.innerText = "invalid input";
-    div.appendChild(span);
-    span.classList.add("parsing");
+    !lastName.match(/^[a-zA-Z]+$/) ||
+    (status !== "En validation" && status !== "Validé" && status !== "Rejeté")
+  )
     return;
-  }
   document.getElementById("lastName").value = "";
   document.getElementById("firstName").value = "";
   document.getElementById("userName").value = "";
@@ -418,20 +132,20 @@ function displayList(users) {
       td.classList.add("bordered-row");
       if (value[1] === "En validation") {
         div.classList.add("status");
-        div.style.backgroundColor = "#fdb64d"
+        div.style.backgroundColor = "#fdb64d";
       } else if (value[1] === "Validé") {
         div.classList.add("status");
-        div.style.backgroundColor = "#5be881"
+        div.style.backgroundColor = "#5be881";
       } else if (value[1] === "Rejeté") {
         div.classList.add("status");
-        div.style.backgroundColor = "#ff0000"
+        div.style.backgroundColor = "#ff0000";
       }
       if (value[0] === "action") {
         let icon = document.createElement("img");
         let button = document.createElement("button");
         button.classList.add("buttonTrash");
         div.classList.add("actionDiv");
-        icon.classList.add('trash')
+        icon.classList.add("trash");
         icon.src = "trash.svg";
         button.addEventListener("click", () => {
           users.splice(index, 1);
